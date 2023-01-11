@@ -5,7 +5,7 @@ describe('index.html', () => {
   const dialogHandler2 = jest.fn(dialog => dialog.dismiss());
 
   beforeAll(async () => {
-    const URL = `file:///${path.resolve(__dirname, '../docs/index.html')}`;
+    const URL = `file:///${path.resolve(__dirname, '../docs/week-01/pricing.html')}`;
     page.on('dialog', dialogHandler2);
     await page.goto(URL, {
       waitUntil: 'networkidle2'
